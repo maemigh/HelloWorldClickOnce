@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+    <asmv1:assemblyIdentity name="HelloWorldClickOnce.exe" version="1.0.0.1" publicKeyToken="914f582bfab6a12a" language="neutral" processorArchitecture="msil" type="win32" />
+    <application>
+        <asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2024/WindowsSettings">
+            <supportedArchitectures>amd64 arm64</supportedArchitectures>
+        </asmv3:windowsSettings>
+    </application>
+    <entryPoint>
+        <assemblyIdentity name="HelloWorldClickOnce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+        <commandLine file="HelloWorldClickOnce.exe" parameters="" />
+    </entryPoint>
+    <trustInfo>
+        <security>
+            <applicationRequestMinimum>
+                <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+                <defaultAssemblyRequest permissionSetReference="Custom" />
+            </applicationRequestMinimum>
+            <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+                <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+                <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+            </requestedPrivileges>
+        </security>
+    </trustInfo>
+    <dependency>
+        <dependentOS>
+            <osVersionInfo>
+                <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+            </osVersionInfo>
+        </dependentOS>
+    </dependency>
+    <dependency>
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+            <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+        </dependentAssembly>
+    </dependency>
+    <dependency>
+        <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HelloWorldClickOnce.exe" size="8104">
+            <assemblyIdentity name="HelloWorldClickOnce" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+            <hash>
+                <dsig:Transforms>
+                    <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+                </dsig:Transforms>
+                <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+                <dsig:DigestValue>iouHEFqIuVhg1abXsywG/L9I/cLL9I6FGaRQgpkEUoY=</dsig:DigestValue>
+            </hash>
+        </dependentAssembly>
+    </dependency>
+    <file name="HelloWorldClickOnce.exe.config" size="189">
+        <hash>
+            <dsig:Transforms>
+                <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+            </dsig:Transforms>
+            <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+            <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+        </hash>
+    </file>
+<publisherIdentity name="CN=vmware\mike" issuerKeyHash="721944d440fd868525e2c3b4aa8e672d6516253f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sePJJcthBvmXVHWUECOr6LnSjcXokg1arqvCnUFldvg=</DigestValue></Reference></SignedInfo><SignatureValue>DhDFPmm0vPkFQbMJVpBuK0WsnDHZfod0tX+os4YGbEO3eaIx1l5FfBNecYSUoU+jkELmZ4jjdbVBYP8pq1rk8aOTjNH63H2X3c9fbN56BDB6T2tbUcbnzFbmMpwif/ieHsklSFcPkCIpOIuz37UdwML4a1X+FUne4UiKKCrAxOI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>oMG6IgyHXbF/Q2RmJ9J3JYE8C7cKOIu+DYRu4LrxTaNQL2oZmot/u8uPDL5AsX3IjwD/slZrhxD7yXdImaigSEaE1NLWY9SlhTcQ7XBtj8AZoZ5cyNTGCA/LtTn8nnwiTkk6+jqcnIBadf8Z269GzGtEVIZ/2Ekm6//VGyuarVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f87665419dc2abae5a0d92e8c58dd2b9e8ab231094755497f90661cb25c9e3b1" Description="" Url=""><as:assemblyIdentity name="HelloWorldClickOnce.exe" version="1.0.0.1" publicKeyToken="914f582bfab6a12a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=vmware\mike</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>s6a78+6BfzmPi7Z8/lWUKQT1TZ0DDRsbWNCQzJiCrys=</DigestValue></Reference></SignedInfo><SignatureValue>TwoW1S3hUVx+IHdz2zeVltRFEeWjgekN5+gDyrT1PZa58atSZhPdxmB+NZBhCrQ7+jOloFpcLzXm1XI5xM3/F/zXhz3StBBzH8xQzYdgvMxWNsL1X0PDcQp8vjYoLvHcp////cjr/sScXyLe9FQVhHQLgERb4PxcoRuDiwur2xE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oMG6IgyHXbF/Q2RmJ9J3JYE8C7cKOIu+DYRu4LrxTaNQL2oZmot/u8uPDL5AsX3IjwD/slZrhxD7yXdImaigSEaE1NLWY9SlhTcQ7XBtj8AZoZ5cyNTGCA/LtTn8nnwiTkk6+jqcnIBadf8Z269GzGtEVIZ/2Ekm6//VGyuarVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQN2bz5R7UgohFwdoX6BGy2zANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYAdgBtAHcAYQByAGUAXABtAGkAawBlMB4XDTI1MDMxNDAzNDcyOVoXDTI2MDMxNDA5NDcyOVowITEfMB0GA1UEAx4WAHYAbQB3AGEAcgBlAFwAbQBpAGsAZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAoMG6IgyHXbF/Q2RmJ9J3JYE8C7cKOIu+DYRu4LrxTaNQL2oZmot/u8uPDL5AsX3IjwD/slZrhxD7yXdImaigSEaE1NLWY9SlhTcQ7XBtj8AZoZ5cyNTGCA/LtTn8nnwiTkk6+jqcnIBadf8Z269GzGtEVIZ/2Ekm6//VGyuarVECAwEAATANBgkqhkiG9w0BAQsFAAOBgQB/rRwNCn2g+zwnDXtz9rF4Ic1jv3o2nmjSV5VrJDAa2QNFDPqiXCqvVV0aL80QbtwnYiB5DtoG9g1mjL/t2lYtUfAWWmUu0Q8P3E28fB0rm/AHx81b6Pa2YceFJeqCW/txxH07FZ/RlT/OQxHTkqvNtxICpS52DUd3uVlBwFWrgw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

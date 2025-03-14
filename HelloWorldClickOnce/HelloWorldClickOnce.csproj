@@ -14,7 +14,7 @@
     <PreferNativeArm64>true</PreferNativeArm64>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>C:\Users\mike\Desktop\HelloWorldClickOnceDeploy\</PublishUrl>
+    <PublishUrl>C:\Users\mike\source\repos\HelloWorldClickOnce\published\</PublishUrl>
     <Install>false</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -24,10 +24,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>https://maemigh.github.io/HelloWorldClickOnce/HelloWorldClickOnceDeploy/</InstallUrl>
+    <InstallUrl>https://raw.githubusercontent.com/maemigh/HelloWorldClickOnce/master/published/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
